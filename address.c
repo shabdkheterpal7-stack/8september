@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    printf("Raghav Gupta\n");
-    printf("Ridhi Sidhi Residency\n");
-    printf("Jagatpura\n");
-    printf("Jaipur\n");
+    printf("university of petroleum and energy studies\n");
+    printf("P.O. Bidholi, via prem nagar\n");
+    printf("dehradun, Uttrakhand \n")
+    printf("india 248007 \n");
     return 0;
+
 }
