@@ -4,13 +4,14 @@ int main() {
     char name;
     int age;
 
-    printf("What is the first letter of your name? ");
-    scanf(" %c", &name);
+    printf("enter your name");
+    scanf(" %s", &name);
 
-    printf("How old are you? ");
+    printf("enter your age ");
     scanf("%d", &age);
 
-    printf("Hello, %c! You are %d years old", name, age);
+    printf("Your name is %d, your age is %d", name, age);
 
     return 0;
 }
+
