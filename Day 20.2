@@ -1,0 +1,29 @@
+#include <stdio.h>
+/* Program to find the 1’s complement of a binary number.
+int main() {
+    int binary, digit, complement = 0, place = 1;
+
+    printf("Enter a binary number (e.g., 1011): ");
+    scanf("%d", &binary);
+
+    while (binary != 0) {
+        digit = binary % 10;
+
+        // Flip the digit: 0 becomes 1, 1 becomes 0
+        if (digit == 0)
+            complement += 1 * place;
+        else if (digit == 1)
+            complement += 0 * place;
+        else {
+            printf("Invalid binary digit detected.\n");
+            return 1;
+        }
+
+        binary /= 10;
+        place *= 10;
+    }
+
+    printf("1's complement is: %d\n", complement);
+
+    return 0;
+}

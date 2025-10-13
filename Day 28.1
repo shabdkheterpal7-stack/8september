@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+/*
+    Question:
+    Write a C program to print all prime numbers from 1 to n
+*/
+
+int main() {
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+
+    printf("Prime numbers from 1 to %d are:\n", n);
+
+    for (int num = 2; num <= n; num++) {
+        int P = 1;
+
+        if (num == 2 || num == 3) {
+            P = 1;
+        } else if (num % 2 == 0 || num % 3 == 0) {
+            P = 0;
+        } else {
+            int i = 5;
+            while (i * i <= num) {
+                if (num % i == 0 || num % (i + 2) == 0) {
+                    P = 0;
+                }
+                i += 6;
+            }
+        }
+
+        if (P == 1) {
+            printf("%d ", num);
+        }
+    }
+
+    printf("\n");
+    return 0;
+}

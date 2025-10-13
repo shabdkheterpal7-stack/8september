@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/*
+ * Program to find the HCF (GCD) of two numbers.
+ * The HCF is the largest number that divides both numbers without leaving a remainder.
+ */
+
+int main() {
+    int a, b, temp;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    // Euclidean algorithm
+    while (b != 0) {
+        temp = b;
+        b = a % b;
+        a = temp;
+    }
+
+    printf("HCF (GCD) is: %d\n", a);
+
+    return 0;
+}
